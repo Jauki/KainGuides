@@ -2,7 +2,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import UserProfile from "./pages/user/UserProfile";
+import UserProfilePage from "./pages/user/UserProfilePage";
 
 // Defines Routes and is used in index.tsx
 export const router = createBrowserRouter([
@@ -12,6 +12,6 @@ export const router = createBrowserRouter([
   },
   {
     path: "/user",
-    element: <UserProfile/>
+    element: <UserProfilePage />
   }
 ]);

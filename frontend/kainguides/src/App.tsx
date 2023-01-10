@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes, Router } from 'react-router-dom';
-import UserProfile from './pages/user/UserProfile';
+import UserProfile from './pages/user/UserProfilePage';
 
 
 function App() {

@@ -9,7 +9,7 @@ import {
 
 import { router } from './routes';
 
-import UserProfile from './pages/user/UserProfile';
+import UserProfile from './pages/user/UserProfilePage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
