@@ -1,8 +1,8 @@
 import React from "react"
 
 export enum DepartmentEnum {
-    Informatik,
-    Mechatronik,
-    Automatisierung,
-    Robotik
+    Informatik = "Informatik",
+    Mechatronik = "Mechatronik",
+    Automatisierung = "Automatisierung",
+    Robotik = "Robotik"
 }

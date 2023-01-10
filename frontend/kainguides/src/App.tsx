@@ -5,7 +5,7 @@ import UserProfile from './pages/user/UserProfilePage';
 
 function App() {
   return (
-    <div>  
+    <div className='w-screen h-screen'>  
         <Routes>
           <Route path='/user' element={<UserProfile/>}></Route>
         </Routes>
