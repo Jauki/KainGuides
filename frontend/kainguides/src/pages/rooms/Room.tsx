@@ -10,7 +10,7 @@ type RoomProps = {
 const Room = ({color, description, headline}: RoomProps) => {
     return(
         <div>
-            <div className={`flex justify-center align-middle font-bold w-full h-12`} style={{background: color}}>
+            <div className={`flex justify-center align-middle font-bold w-full h-12`}>
                 {headline}
             </div>
             <div>{description}</div>
