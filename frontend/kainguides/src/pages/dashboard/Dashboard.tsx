@@ -1,5 +1,4 @@
 import React from "react"
-import Utilization from "../../common/statitems/Utilization"
 import Navbar from "./components/Navbar"
 import Stats from "./components/Stats"
 
@@ -10,7 +9,6 @@ const Dashboard = () => {
                 <Navbar />
             </div>
             <div className="col-start-4 col-span-9 py-16">
-                {/* The Component that is rendered here is changed when clicked on a navbar item */}
                 <Stats />
             </div>
         </div>

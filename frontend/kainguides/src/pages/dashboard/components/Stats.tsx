@@ -1,5 +1,4 @@
 import React, {FunctionComponent} from "react";
-import { EnumDeclaration } from "typescript";
 import { DepartmentEnum } from "../../../common/departments";
 import Header from "../../../common/Header";
 import AvailableGuides from "../../../common/statitems/AvailableGuides";
