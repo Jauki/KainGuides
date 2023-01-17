@@ -19,8 +19,8 @@ const AvgTimePerTour = ({avgTime, change} : AvgTimePerTourProps) => {
     }
 
     return (
-        <div className="col-span-3">
-            <h1 className="text-2xl">Average time per tour:</h1>
+        <div className="col-span-3 row-span-1">
+            <h1>Average time per tour:</h1>
             <div className="text-5xl font-bold">
                 <div className="relative inline-block mt-4">
                     {avgTime} mins

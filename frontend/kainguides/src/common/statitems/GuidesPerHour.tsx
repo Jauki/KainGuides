@@ -12,10 +12,10 @@ const GuidesPerHour = () => {
     ]
 
     return (
-        <div className="col-span-6 bg-gray-50 border border-gray-100 rounded-2xl p-6 font-medium">
+        <div className="col-span-6 bg-gray-50 border border-gray-100 rounded-2xl p-6 font-medium row-span-3">
             <div>Guides Per Hour</div>
-            <div className="w-full mt-10">
-                <AreaChart data={data} width={693} height={186}>
+            <div className="w-full mt-10 flex justify-center items-center">
+                <AreaChart data={data} width={800} height={220}>
                     <defs>
                         <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
                         <stop offset="5%" stopColor="#7F56D9" stopOpacity={0.8}/>
