@@ -13,9 +13,6 @@ const Dashboard = () => {
                 {/* The Component that is rendered here is changed when clicked on a navbar item */}
                 <Stats />
             </div>
-            <div className="col-span-3">
-                <Utilization percentage={66}/>
-            </div>
         </div>
     )
 }

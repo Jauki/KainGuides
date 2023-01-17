@@ -6,4 +6,7 @@
   h1 {
     @apply text-2xl;
   }
+  body{
+    @apply overflow-hidden
+  }
 }

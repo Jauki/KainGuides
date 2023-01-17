@@ -2,7 +2,9 @@ import React, {FunctionComponent} from "react";
 import { EnumDeclaration } from "typescript";
 import { DepartmentEnum } from "../../../common/departments";
 import Header from "../../../common/Header";
+import AvailableGuides from "../../../common/statitems/AvailableGuides";
 import AvgTimePerTour from "../../../common/statitems/AvgTimePerTour";
+import Day from "../../../common/statitems/Day";
 import GuidesPerHour from "../../../common/statitems/GuidesPerHour";
 import LatestGuidesList from "../../../common/statitems/latestGuides/LatestGuidesList";
 import NumTours from "../../../common/statitems/NumTours";
@@ -38,7 +40,7 @@ const Stats : FunctionComponent = () => {
     return(
         <div className="w-full h-full flex flex-col">
             <Header headline={"Datatracking Overview"} />
-            <div className="grid grid-cols-9 h-full pt-11 grid-rows-6 gap-y-6">
+            <div className="grid grid-cols-9 h-full pt-11 grid-rows-6 gap-y-6 w-full">
                 <AvgTimePerTour avgTime={7} change={10}/>
                 <GuidesPerHour />
                 <Utilization percentage={66}/>
@@ -48,6 +50,12 @@ const Stats : FunctionComponent = () => {
                 </div>
                 <div className="col-span-4 row-span-3">
                     <ToursPerDepartment />
+                </div>
+                <div className="col-span-2 mx-4">
+                    <AvailableGuides numGuides={4}/>
+                </div>
+                <div className="col-span-2 row-start-6 col-start-8 mx-4">
+                    <Day day={new Date()}/>
                 </div>
             </div>
         </div>

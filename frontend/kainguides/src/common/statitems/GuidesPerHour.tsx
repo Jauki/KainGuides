@@ -1,5 +1,7 @@
 import React from "react";
 import ReactECharts from "echarts-for-react"
+import EChartsReact from "echarts-for-react";
+import * as echarts from 'echarts';
 
 const GuidesPerHour = () => {
 
@@ -26,7 +28,15 @@ const GuidesPerHour = () => {
             type: 'line',
             smooth: true,
             areaStyle: {
-                color: '#FFFF22'
+                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                    offset: 0,
+                    color: "#7F56D9"
+                  },
+                  {
+                    offset: 1,
+                    color: "#9c84d1"
+                  }
+                ])
             }
             }
         ]
@@ -34,9 +44,9 @@ const GuidesPerHour = () => {
 
 
     return (
-        <div className="col-span-6 bg-gray-50 border border-gray-100 rounded-2xl p-6 font-medium row-span-3">
-            <div>Guides Per Hour</div>
-            <div className="w-full mt-10">
+        <div className="col-span-6 bg-gray-50 border border-gray-100 rounded-2xl font-medium row-span-3">
+            <div className="px-4 pt-4">Guides Per Hour</div>
+            <div className="w-full mt-4">
                <ReactECharts option={option} />
             </div>
         </div>
