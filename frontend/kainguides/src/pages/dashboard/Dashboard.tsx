@@ -14,7 +14,7 @@ const Dashboard = () => {
                 <Stats />
             </div>
             <div className="col-span-3">
-                <Utilization />
+                <Utilization percentage={66}/>
             </div>
         </div>
     )

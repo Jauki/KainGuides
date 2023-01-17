@@ -6,28 +6,31 @@ import AvgTimePerTour from "../../../common/statitems/AvgTimePerTour";
 import GuidesPerHour from "../../../common/statitems/GuidesPerHour";
 import LatestGuidesList from "../../../common/statitems/latestGuides/LatestGuidesList";
 import NumTours from "../../../common/statitems/NumTours";
+import ToursPerDepartment from "../../../common/statitems/ToursPerDepartment";
 import Utilization from "../../../common/statitems/Utilization";
 
-const guides : Array<{name: string, dept: DepartmentEnum}> = [
+const guides : Array<{firstname: string,lastname: string, dept: DepartmentEnum}> = [
     {
-        name: "elias Halbauer",
+        firstname: "elias",
+        lastname: "Halbauer",
         dept: DepartmentEnum.Informatik,
     },
     {
-        name: "elias Halbauer",
-        dept: DepartmentEnum.Automatisierung,
-    },
-    {
-        name: "elias Halbauer",
-        dept: DepartmentEnum.Mechatronik,
-    },
-    {
-        name: "elias Halbauer",
-        dept: DepartmentEnum.Mechatronik,
-    },
-    {
-        name: "elias Halbauer",
-        dept: DepartmentEnum.Mechatronik,
+        firstname: "elias",
+        lastname: "Halbauerasdasdasd",
+        dept: DepartmentEnum.Informatik,
+    },{
+        firstname: "elias",
+        lastname: "Halbauer",
+        dept: DepartmentEnum.Informatik,
+    },{
+        firstname: "elias",
+        lastname: "Halbauer",
+        dept: DepartmentEnum.Informatik,
+    },{
+        firstname: "elias",
+        lastname: "Halbauer",
+        dept: DepartmentEnum.Informatik,
     },
 ]
 
@@ -40,8 +43,11 @@ const Stats : FunctionComponent = () => {
                 <GuidesPerHour />
                 <Utilization percentage={66}/>
                 <NumTours allTours={256} currTours={7} />
-                <div className="col-span-3 row-start-5 row-span-2">
+                <div className="col-span-3 row-start-5 row-span-2 pr-6">
                     <LatestGuidesList latestGuidesList={guides}/>
+                </div>
+                <div className="col-span-4 row-span-3">
+                    <ToursPerDepartment />
                 </div>
             </div>
         </div>

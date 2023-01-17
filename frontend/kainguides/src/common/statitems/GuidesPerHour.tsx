@@ -26,7 +26,7 @@ const GuidesPerHour = () => {
             type: 'line',
             smooth: true,
             areaStyle: {
-                color: new echarts.graphic.LinearGradient()
+                color: '#FFFF22'
             }
             }
         ]
