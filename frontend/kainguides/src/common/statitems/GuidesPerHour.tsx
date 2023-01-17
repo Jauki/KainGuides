@@ -1,5 +1,5 @@
 import React from "react";
-import {LineChart, Line, ResponsiveContainer, AreaChart, XAxis, YAxis, Area} from 'recharts'
+import ReactECharts from "echarts-for-react"
 
 const GuidesPerHour = () => {
 
@@ -11,22 +11,33 @@ const GuidesPerHour = () => {
         {time: 5, guides : 14},
     ]
 
+    const option = {
+        xAxis: {
+            type: 'category',
+            boundaryGap: false,
+            data: [1,2,3,4,5]
+        },
+        yAxis: {
+            type: 'value'
+        },
+        series: [
+            {
+            data: [6,7,3,12,14],
+            type: 'line',
+            smooth: true,
+            areaStyle: {
+                color: new echarts.graphic.LinearGradient()
+            }
+            }
+        ]
+    };
+
+
     return (
         <div className="col-span-6 bg-gray-50 border border-gray-100 rounded-2xl p-6 font-medium row-span-3">
             <div>Guides Per Hour</div>
-            <div className="w-full mt-10 flex justify-center items-center">
-                <AreaChart data={data} width={800} height={220}>
-                    <defs>
-                        <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="5%" stopColor="#7F56D9" stopOpacity={0.8}/>
-                        <stop offset="95%" stopColor="#7F56D9" stopOpacity={0}/>
-                        </linearGradient>
-                    </defs>
-                    <XAxis dataKey="time" />
-                    {/* <YAxis dataKey="guides" /> */}
-                    <YAxis />
-                    <Area type="monotone" dataKey="guides" stroke="#7F56D9" fillOpacity={1} fill="url(#colorUv)" strokeWidth={3}/>
-                </AreaChart>
+            <div className="w-full mt-10">
+               <ReactECharts option={option} />
             </div>
         </div>
     )
