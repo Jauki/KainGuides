@@ -5,6 +5,7 @@ import {
 import { DepartmentEnum } from "./common/departments";
 import Dashboard from "./pages/dashboard/Dashboard";
 import GuideList from "./pages/guidelist/GuideList";
+import RegisterGuide from "./pages/registerGuide/RegisterGuide";
 import Room from "./pages/rooms/Room";
 import UserProfilePage from "./pages/user/UserProfilePage";
 
@@ -25,6 +26,10 @@ export const router = createBrowserRouter([
   {
     path: "/guidelist",
     element: <GuideList />
+  },
+  {
+    path: "/register",
+    element: <RegisterGuide />
   },
   {
     path: "/rooms/bwm",

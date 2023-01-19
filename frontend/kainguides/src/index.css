@@ -9,4 +9,7 @@
   body{
     @apply overflow-x-hidden
   }
+  input{
+    @apply bg-gray-50 rounded-md h-10 outline-none indent-1
+  }
 }

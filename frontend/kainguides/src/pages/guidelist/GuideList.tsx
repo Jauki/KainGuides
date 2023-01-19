@@ -44,9 +44,9 @@ const GuideList = () => {
     return(
         <div className="w-screen h-screen grid grid-cols-12 px-24">
             <div className="col-span-2">
-                <Navbar />
+                <Navbar selected={2} />
             </div>
-            <div className="col-start-4 col-span-9 py-16 bg-slate-100 h-full flex flex-col gap-12">
+            <div className="col-start-4 col-span-9 py-16 h-full flex flex-col gap-12">
                 <Header headline={"Guide List"} />
                 <div className="w-full">
                     <div className="w-full grid grid-cols-12 font-bold my-4">

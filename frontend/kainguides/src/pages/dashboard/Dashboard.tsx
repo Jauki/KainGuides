@@ -6,7 +6,7 @@ const Dashboard = () => {
     return(
         <div className="w-screen h-screen grid grid-cols-12 px-24">
             <div className="col-span-2">
-                <Navbar />
+                <Navbar selected={1}/>
             </div>
             <div className="col-start-4 col-span-9 py-16">
                 <Stats />
