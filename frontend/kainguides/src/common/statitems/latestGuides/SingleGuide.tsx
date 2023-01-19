@@ -1,7 +1,9 @@
 import React from 'react'
+import { GuideType } from '../../../pages/guidelist/GuideTypes'
+import Department from '../../Department'
 
 type SingleGuideProps = {
-  guide : any
+  guide : GuideType
 } 
 
 const SingleGuide = ({guide} : SingleGuideProps) => {
@@ -17,7 +19,7 @@ const SingleGuide = ({guide} : SingleGuideProps) => {
             : guide.firstname + " " + guide.lastname
           }
         </div>
-        <div className='text-sm text-informatik py-0 px-1 bg-blueLight rounded-lg'>{guide.dept}</div>
+          <Department dept={guide.dept}/>
       </div>
       <div>09:42 </div>
     </div>

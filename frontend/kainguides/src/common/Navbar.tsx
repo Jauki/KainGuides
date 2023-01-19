@@ -12,8 +12,8 @@ const Navbar = () => {
             <div className="w-full my-12">
                 <div className="font-medium">Management</div>
                 <div className="flex flex-col gap-4 py-4">
-                    <NavbarItem Icon={<HomeIcon />} name={"Overview"} route={"/"}/>
-                    <NavbarItem Icon={<ListBulletIcon />} name={"Guide List"} route={"/guides"}/>
+                    <NavbarItem Icon={<HomeIcon />} name={"Overview"} route={"/dashboard"}/>
+                    <NavbarItem Icon={<ListBulletIcon />} name={"Guide List"} route={"/guidelist"}/>
                     <NavbarItem Icon={<UserPlusIcon />} name={"Register Guide"} route={"/register"}/>
                 </div>
             </div>

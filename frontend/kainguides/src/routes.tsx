@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import { DepartmentEnum } from "./common/departments";
 import Dashboard from "./pages/dashboard/Dashboard";
+import GuideList from "./pages/guidelist/GuideList";
 import Room from "./pages/rooms/Room";
 import UserProfilePage from "./pages/user/UserProfilePage";
 
@@ -20,6 +21,10 @@ export const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashboard />
+  },
+  {
+    path: "/guidelist",
+    element: <GuideList />
   },
   {
     path: "/rooms/bwm",

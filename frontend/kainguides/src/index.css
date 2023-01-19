@@ -7,6 +7,6 @@
     @apply text-2xl;
   }
   body{
-    @apply overflow-hidden
+    @apply overflow-x-hidden
   }
 }
