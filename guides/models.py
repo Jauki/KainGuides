@@ -3,14 +3,14 @@ from django.db.models import CASCADE
 
 
 class Department(models.Model):
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, primary_key=True)
 
     def get_by_natural_key(self, pk):
         return self.get(pk=pk)
 
 
 class SchoolClass(models.Model):
-    class_name = models.CharField(max_length=7)
+    class_name = models.CharField(max_length=7, primary_key=True)
     department = models.ForeignKey(Department, on_delete=CASCADE)
 
 
@@ -25,5 +25,5 @@ class Tour(models.Model):
     visitors = models.IntegerField()
     potential_students = models.IntegerField()
     start_time = models.DateTimeField(auto_now_add=True)
-    end_time = models.DateTimeField()
+    end_time = models.DateTimeField(null=True)
     department = models.ForeignKey(Department, on_delete=CASCADE)

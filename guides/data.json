@@ -1,38 +1,33 @@
 [
   {
     "model": "guides.department",
-    "pk": 1,
+    "pk": "Informatik",
     "fields": {
-      "name": "Informatik"
     }
   },
   {
     "model": "guides.department",
-    "pk": 2,
+    "pk": "Mechatronik",
     "fields": {
-      "name": "Mechatronik"
     }
   },
   {
     "model": "guides.department",
-    "pk": 3,
+    "pk": "Robotik",
     "fields": {
-      "name": "Robotik"
     }
   },
   {
     "model": "guides.department",
-    "pk": 4,
+    "pk": "Automatisierung",
     "fields": {
-      "name": "Automatisierung"
     }
   },
   {
     "model": "guides.schoolclass",
-    "pk": 1,
+    "pk": "2CHIF",
     "fields": {
-      "class_name": "1CHIF",
-      "department": 1
+      "department": "Informatik"
     }
   }
 ]

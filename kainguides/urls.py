@@ -17,10 +17,14 @@ from django.contrib import admin
 from django.urls import path
 from guides import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tour/', views.TourList.as_view()),
-    path('tour/<int:pk>/', views.TourDetail.as_view()),
+    path('tours/', views.TourList.as_view()),
+    path('end/<int:pk>/', views.TourEnd.as_view()),
+    path('resume/<int:pk>/', views.TourResume.as_view()),
+    path('tours/<int:pk>/', views.TourDetail.as_view()),
+    path('guides/', views.GuideList.as_view()),
+    path('guides/<int:pk>/', views.GuideDetail.as_view()),
+    path('departments/', views.DepartmentList.as_view()),
 
 ]
