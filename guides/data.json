@@ -1,0 +1,38 @@
+[
+  {
+    "model": "guides.department",
+    "pk": 1,
+    "fields": {
+      "name": "Informatik"
+    }
+  },
+  {
+    "model": "guides.department",
+    "pk": 2,
+    "fields": {
+      "name": "Mechatronik"
+    }
+  },
+  {
+    "model": "guides.department",
+    "pk": 3,
+    "fields": {
+      "name": "Robotik"
+    }
+  },
+  {
+    "model": "guides.department",
+    "pk": 4,
+    "fields": {
+      "name": "Automatisierung"
+    }
+  },
+  {
+    "model": "guides.schoolclass",
+    "pk": 1,
+    "fields": {
+      "class_name": "1CHIF",
+      "department": 1
+    }
+  }
+]
