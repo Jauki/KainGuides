@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-2xl;
+  }
+  body{
+    @apply overflow-x-hidden
+  }
+  input{
+    @apply bg-gray-50 rounded-md h-10 outline-none indent-1
+  }
+}

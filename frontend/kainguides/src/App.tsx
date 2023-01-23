@@ -1,8 +1,14 @@
-import React from 'react';
+import React from "react";
+import { Route, Routes, Router } from "react-router-dom";
+import UserProfile from "./pages/user/UserProfilePage";
 
 function App() {
   return (
-   <span>Hello From App</span>
+    <div className="w-screen h-screen">
+      <Routes>
+        <Route path="/user" element={<UserProfile />}></Route>
+      </Routes>
+    </div>
   );
 }
 
