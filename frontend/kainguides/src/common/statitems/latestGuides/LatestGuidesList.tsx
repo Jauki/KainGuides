@@ -1,8 +1,9 @@
 import React from 'react'
+import { GuideType } from '../../../pages/guidelist/GuideTypes'
 import SingleGuide from './SingleGuide'
 
 type LatestGuidesListProps = {
-  latestGuidesList : Array<any>,
+  latestGuidesList : Array<GuideType>,
 }
 
 const LatestGuidesList = ({latestGuidesList} : LatestGuidesListProps) => {

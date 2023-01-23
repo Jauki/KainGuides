@@ -1,46 +1,24 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { DepartmentEnum } from "../../common/departments";
 import Header from "../../common/Header";
 import Navbar from "../../common/Navbar";
+import { GuideContext } from "../../setup/contextManager/GuideProvider";
 import SingleGuide from "./compontents/GuideInList";
 import { GuideType } from "./GuideTypes";
+import { getAllGuides } from "../../setup/api/GuideApi";
 
-const guideList: Array<GuideType> = [
-    {
-        isActive: true,
-        firstname: "Elias",
-        lastname: "Halbauer",
-        time: null,
-        dept: DepartmentEnum.Informatik,
-        tours: 6
-    },
-    {
-        isActive: false,
-        firstname: "Elias",
-        lastname: "Halbauer",
-        time: null,
-        dept: DepartmentEnum.Automatisierung,
-        tours: 6
-    },
-    {
-        isActive: true,
-        firstname: "Elias",
-        lastname: "Halbauer",
-        time: null,
-        dept: DepartmentEnum.Mechatronik,
-        tours: 6
-    },
-    {
-        isActive: true,
-        firstname: "Elias",
-        lastname: "Halbauer",
-        time: null,
-        dept: DepartmentEnum.Robotik,
-        tours: 6
-    },
-]
+
 
 const GuideList = () => {
+const guideContext = useContext(GuideContext);
+
+const [guides, setGuides] = useState<Array<GuideType>>([]);
+
+    useEffect(() => {
+        const guides = getAllGuides();
+        console.log(guides.then(data => setGuides(data)))
+    }, [])
+
     return(
         <div className="w-screen h-screen grid grid-cols-12 px-24">
             <div className="col-span-2">
@@ -58,7 +36,7 @@ const GuideList = () => {
                     </div>
                     <div className="flex flex-col gap-4 w-full">
                         {
-                            guideList.map(guide => <SingleGuide guide={guide}/>)
+                            guides.map(guide => <SingleGuide key={guide.id} guide={guide}/>)
                         }
                     </div>
                 </div>

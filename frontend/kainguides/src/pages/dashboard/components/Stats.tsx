@@ -9,30 +9,34 @@ import LatestGuidesList from "../../../common/statitems/latestGuides/LatestGuide
 import NumTours from "../../../common/statitems/NumTours";
 import ToursPerDepartment from "../../../common/statitems/ToursPerDepartment";
 import Utilization from "../../../common/statitems/Utilization";
+import { GuideType } from "../../guidelist/GuideTypes";
 
-const guides : Array<{firstname: string,lastname: string, dept: DepartmentEnum}> = [
+const guides : Array<GuideType> = [
     {
-        firstname: "elias",
-        lastname: "Halbauer",
+        first_name: "elias",
+        last_name: "Halbauer",
         dept: DepartmentEnum.Informatik,
+        school_class: "5CHIF"
     },
     {
-        firstname: "elias",
-        lastname: "Halbauerasdasdasd",
+        first_name: "elias",
+        last_name: "Halbauer",
         dept: DepartmentEnum.Informatik,
-    },{
-        firstname: "elias",
-        lastname: "Halbauer",
-        dept: DepartmentEnum.Informatik,
-    },{
-        firstname: "elias",
-        lastname: "Halbauer",
-        dept: DepartmentEnum.Informatik,
-    },{
-        firstname: "elias",
-        lastname: "Halbauer",
-        dept: DepartmentEnum.Informatik,
+        school_class: "5CHIF"
     },
+    {
+        first_name: "elias",
+        last_name: "Halbauer",
+        dept: DepartmentEnum.Informatik,
+        school_class: "5CHIF"
+    },
+    {
+        first_name: "elias",
+        last_name: "Halbauer",
+        dept: DepartmentEnum.Informatik,
+        school_class: "5CHIF"
+    },
+    
 ]
 
 const Stats : FunctionComponent = () => {

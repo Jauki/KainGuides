@@ -1,11 +1,13 @@
 import { DepartmentEnum } from "../../common/departments"
 
 export interface GuideType {
-    isActive : boolean,
-    firstname : string,
-    lastname: string,
+    isActive? : boolean,
+    id? : number,
+    first_name : string,
+    last_name : string,
     time? : string | null,
     dept : DepartmentEnum,
-    tours? : number
+    tours? : number,
+    school_class : string
 };
 

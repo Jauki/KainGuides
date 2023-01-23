@@ -14,9 +14,9 @@ const SingleGuide = ({guide} : SingleGuideProps) => {
       <div className='flex flex-grow justify-between pr-4'>
         <div>
           {
-          (guide.firstname.length + guide.lastname.length >= 15) 
-            ? guide.firstname + " " + guide.lastname.substring(0,1) + "." 
-            : guide.firstname + " " + guide.lastname
+          (guide.first_name.length + guide.last_name.length >= 15) 
+            ? guide.first_name + " " + guide.last_name.substring(0,1) + "." 
+            : guide.first_name + " " + guide.last_name
           }
         </div>
           <Department dept={guide.dept}/>

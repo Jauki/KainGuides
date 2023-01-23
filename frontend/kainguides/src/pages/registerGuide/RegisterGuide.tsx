@@ -2,20 +2,22 @@ import React from "react";
 import { DepartmentEnum } from "../../common/departments";
 import Header from "../../common/Header";
 import Navbar from "../../common/Navbar";
+import { addGuide } from "../../setup/api/GuideApi";
 import { GuideType } from "../guidelist/GuideTypes";
 
 const RegisterGuide = () => {
 
     const addNewGuide = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        const firstname : string = (e.currentTarget.elements.namedItem("inputFirstname") as HTMLInputElement).value
-        const lastname : string = (e.currentTarget.elements.namedItem("inputLastname") as HTMLInputElement).value
+        const first_name : string = (e.currentTarget.elements.namedItem("inputFirstname") as HTMLInputElement).value
+        const last_name : string = (e.currentTarget.elements.namedItem("inputLastname") as HTMLInputElement).value
         const dept : DepartmentEnum = (e.currentTarget.elements.namedItem("selectDept") as HTMLInputElement).value as DepartmentEnum
-        const className : string = (e.currentTarget.elements.namedItem("inputClass") as HTMLInputElement).value
-        const grade : number = parseInt(className.substring(0,1));
-        const classLetter : string = className.substring(1);
+        const school_class : string = (e.currentTarget.elements.namedItem("inputClass") as HTMLInputElement).value
+        const grade : number = parseInt(school_class.substring(0,1));
+        const classLetter : string = school_class.substring(1);
 
-        const guide : GuideType = {isActive : false, firstname, lastname, dept}
+        const guide : GuideType = {isActive : false, first_name, last_name, dept, school_class}
+        addGuide(guide)
     }
 
     return(
