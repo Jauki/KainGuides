@@ -3,8 +3,8 @@ import axios from "axios";
 import { GuideType } from "../../pages/guidelist/GuideTypes";
 import { DepartmentEnum } from "../../common/departments";
 
-const URLGUIDE : string = 'http://127.0.0.1:8000/guides';
-const URLTOUR : string = 'http://127.0.0.1:8000/tours';
+const URLGUIDE : string = 'https://kainneu.uber.space/kainguides/api/guides/';
+const URLTOUR : string = 'https://kainneu.uber.space/kainguides/api/tours/';
 
 type GuideContextValues = {
     getAllGuides : () => void,
@@ -57,7 +57,7 @@ const GuideProvider = ({children} : {children: React.ReactNode}) => {
     }
 
     const getToursPerHour = async () => {
-       axios.get("http://localhost:8080/tourPerHour", {
+       axios.get("https://kainneu.uber.space/kainguides/api/departmentstats/", {
         headers: {
                 'Authorization': 'Bearer ' + accessToken
             }
