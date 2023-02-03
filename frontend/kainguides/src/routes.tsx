@@ -9,7 +9,7 @@ import Login from "./pages/login/Login";
 import RegisterGuide from "./pages/registerGuide/RegisterGuide";
 import Room from "./pages/rooms/Room";
 import Display from "./pages/slidingDashboard/Display";
-import StartTour from "./pages/startTour/StartTour";
+// import StartTour from "./pages/startTour/StartTour";
 import TourList from "./pages/tourlist/TourList";
 import UserProfilePage from "./pages/user/UserProfilePage";
 
