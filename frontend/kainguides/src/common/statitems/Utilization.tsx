@@ -11,7 +11,7 @@ const Utilization = ({percentage} : UtilizationProps) => {
   }
 
   return(
-    <div className='col-span-3 pr-4 flex flex-col gap-4 mt-auto'>
+    <>
       <div className='flex justify-between'>
         <h1>Utilization</h1>
         <h1 className='font-bold'>{percentage}%</h1>
@@ -19,7 +19,7 @@ const Utilization = ({percentage} : UtilizationProps) => {
         <div className='w-full h-6 bg-primary50 rounded-full'>
           <div className='bg-primary rounded-full h-full' style={barWidth}></div>
         </div>
-    </div>
+    </>
   )
 }
 

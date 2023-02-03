@@ -1,35 +1,19 @@
-import React from 'react'
+import React, {useContext, useEffect} from 'react'
 import { PieChart } from 'recharts';
 import { DepartmentEnum } from '../departments';
 import ReactECharts from "echarts-for-react"
+import { GuideContext } from '../../setup/contextManager/GuideProvider';
 
 const ToursPerDepartment = () => {
 
-  type toursPerDept = {
-    dept: DepartmentEnum,
-    value: number
-  }
-  
-  const data : Array<toursPerDept> = [
-    {
-      dept: DepartmentEnum.Informatik,
-      value: 22
-    },
-    {
-      dept: DepartmentEnum.Mechatronik,
-      value: 12
-    },
-    {
-      dept: DepartmentEnum.Automatisierung,
-      value: 42
-    },
-    {
-      dept: DepartmentEnum.Robotik,
-      value: 6
-    },
-  ]
+  const guideContext = useContext(GuideContext)
 
   const colorPalette = ['#6941C6', '#7F56D9', '#9E77ED', '#F4EBFF']
+
+  useEffect(() => {
+    guideContext?.getToursPerDepartment()
+  }, [])
+
 
 const option = {
     tooltip: {
@@ -41,7 +25,7 @@ const option = {
     },
     series: [
       {
-        name: 'Tours',
+        name: 'department',
         type: 'pie',
         radius: ['40%', '70%'],
         color: colorPalette,
@@ -65,7 +49,7 @@ const option = {
         labelLine: {
           show: false
         },
-        data: data
+        data: guideContext?.toursPerDepartment
       }
     ]
   };

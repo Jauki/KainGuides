@@ -19,7 +19,7 @@ const SingleGuide = ({guide} : SingleGuideProps) => {
             : guide.first_name + " " + guide.last_name
           }
         </div>
-          <Department dept={guide.dept}/>
+          <Department dept={guide.department}/>
       </div>
       <div>09:42 </div>
     </div>

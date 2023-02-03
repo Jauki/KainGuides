@@ -5,14 +5,13 @@ import GuideProvider from "./setup/contextManager/GuideProvider";
 
 function App() {
   return (
-      <GuideProvider>
+    <div>
         <div className="w-screen h-screen">
-
           <Routes>
             <Route path="/user" element={<UserProfile />}></Route>
           </Routes>
         </div>
-      </GuideProvider>
+    </div>
   );
 }
 

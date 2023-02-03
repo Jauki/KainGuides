@@ -10,6 +10,7 @@ import {
 import { router } from './routes';
 
 import UserProfile from './pages/user/UserProfilePage';
+import GuideProvider from './setup/contextManager/GuideProvider';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -18,7 +19,9 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <GuideProvider>
+      <RouterProvider router={router} />
+    </GuideProvider>
   </React.StrictMode>
 );
 

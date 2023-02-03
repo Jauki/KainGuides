@@ -1,5 +1,6 @@
 import React from "react";
 import { automatisierungColors, informatikColors, mechatronikColors, robotikColors } from "../colors";
+import TourList from "../pages/tourlist/TourList";
 import { DepartmentEnum } from "./departments";
 
 type DepartmentProps = {

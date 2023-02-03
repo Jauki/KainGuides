@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8d8809b2-5ab0-49e6-9abb-d96d1fdb972e" name="Changes" comment="" />
+    <list default="true" id="8d8809b2-5ab0-49e6-9abb-d96d1fdb972e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/kainguides/src/routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/kainguides/src/routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/kainguides/src/setup/api/GuideApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/kainguides/src/setup/api/GuideApi.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/kainguides/src/setup/api/TourApi.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/kainguides/src/setup/api/TourApi.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,14 +26,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/kainguides/KainGuides",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/kainguides/KainGuides&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
