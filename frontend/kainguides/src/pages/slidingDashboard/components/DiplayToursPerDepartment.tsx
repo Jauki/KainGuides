@@ -51,11 +51,17 @@ const DisplayToursPerDepartment = () => {
       }
     ]
   };
+  const MINUTE_MS = 6000;
 
     useEffect(() => {
       guideContext?.getToursPerDepartment()
-      console.log()
+      const interval = setInterval(() => {
+        guideContext?.getToursPerDepartment()
+      }, MINUTE_MS);
     }, [])
+
+
+  
 
 
     return(
