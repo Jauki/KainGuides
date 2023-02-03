@@ -2,7 +2,6 @@ import React from "react";
 import ToursPerDepartment from "../../common/statitems/ToursPerDepartment";
 import DisplayToursPerDepartment from "./components/DiplayToursPerDepartment";
 
-import Slider from "react-slick";
 import DataTrackedByNow from "./components/DataTrackedByNow";
 import GuidesPerHourDisplay from "./components/GuidesPerHourDisplay";
 
@@ -19,12 +18,10 @@ var settings = {
 
 const Display = () => {
     return(
-        <div className="w-screen h-screen py-20 px-10 overflow-y-hidden">
-            <Slider {...settings}>
+        <div className="w-screen h-screen py-20 px-10 overflow-hidden">
                 <div className="w-screen h-screen px-10 overflow-y-hidden">
                     <DisplayToursPerDepartment />
                 </div>
-            </Slider>
         </div>
     )
 }
