@@ -60,8 +60,8 @@ const DisplayToursPerDepartment = () => {
 
     return(
         <div className="w-full h-full">
-            <div className="text-4xl py-2">Tours per Department</div>
-            <div className="text-xl py-2">Number of tours today</div>
+            <div className="text-4xl py-2">Touren pro Abteilung</div>
+            <div className="text-xl py-2">Anzahl an heutigen Touren</div>
             
             <div className="flex w-full h-full">
               <div className="w-1/2 h-3/4 relative">

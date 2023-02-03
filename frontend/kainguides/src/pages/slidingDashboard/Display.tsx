@@ -12,7 +12,7 @@ var settings = {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 10000, // 1000 = 1 Sek
 
   };
@@ -23,12 +23,6 @@ const Display = () => {
             <Slider {...settings}>
                 <div className="w-screen h-screen px-10 overflow-y-hidden">
                     <DisplayToursPerDepartment />
-                </div>
-                <div className="w-screen h-screen px-10 overflow-y-hidden">
-                    <DataTrackedByNow />
-                </div>
-                <div className="h-full">
-                    <GuidesPerHourDisplay />
                 </div>
             </Slider>
         </div>
